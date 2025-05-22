@@ -1,0 +1,17 @@
+# Rust build artifacts
+/target/
+
+# Log files
+logs/*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Editor-specific files
+.vscode/
+.idea/
+*.swp
+*~
+*.bak
+*.orig 

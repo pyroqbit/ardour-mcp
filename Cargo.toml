@@ -1,0 +1,32 @@
+[package]
+name = "ardour_mcp"
+version = "0.1.0"
+edition = "2021"
+authors = ["Pyrobite ap@pyrobite.com>"]
+description = "MCP server for controlling Ardour via OSC."
+license = "MIT"
+repository = "https://github.com/pyroqbit/ardour_mcp_server" 
+
+[dependencies]
+rmcp = { version = "0.1.5", features = ["server", "macros", "transport-io", "client", "transport-child-process"] }
+tokio = { version = "1", features = ["full"] }
+nannou_osc = "0.19.0"
+anyhow = "1.0"
+tracing = "0.1"
+tracing-subscriber = { version = "=0.3.19", features = ["env-filter", "fmt"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+schemars = "0.8"
+chrono = "0.4"
+
+[[bin]]
+name = "ardour_mcp_server"
+path = "src/main.rs"
+
+[[bin]]
+name = "stdio-client-tester"
+path = "src/stdio_client_tester.rs"
+
+[[bin]]
+name = "osc_monitor"
+path = "src/bin/osc_monitor.rs" 
