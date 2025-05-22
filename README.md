@@ -1,4 +1,5 @@
-# Ardour MCP Server
+# Ardour MCP Server 
+# (UNDER ACTIVE DEVELOPMENT)
 
 **English** | [Русский](#Русский)
 
